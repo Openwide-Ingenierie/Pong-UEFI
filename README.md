@@ -16,3 +16,8 @@ After compiling, rename the generated `Pong.efi` to `BOOTX64.EFI` (or `BOOTIA64.
 ```
 /EFI/BOOT/BOOTX64.EFI
 ```
+
+## Controls
+
+s / x : Control left bat
+Up / Down : Control right bat
