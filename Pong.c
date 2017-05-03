@@ -1,19 +1,13 @@
 #include <Uefi.h>
 #include <Library/UefiApplicationEntryPoint.h>
-#include <Library/MemoryAllocationLib.h>
 #include <Library/UefiLib.h>
-#include <Library/BaseMemoryLib.h>
-#include <Uefi/UefiSpec.h>
 #include <Library/UefiBootServicesTableLib.h>
 #include <Library/UefiRuntimeServicesTableLib.h>
-#include <Library/BaseLib.h>
 #include <Protocol/GraphicsOutput.h>
-#include <Protocol/SimpleFileSystem.h>
 #include "Numbers.h"
 #define CELLSIZE 10
 #define BALLSIZE CELLSIZE
 #define BATCELLS 10
-#define BATSIZE  (CELLSIZE * BATCELLS)
 
 static EFI_GRAPHICS_OUTPUT_PROTOCOL* Gop = NULL;
 static EFI_GRAPHICS_OUTPUT_BLT_PIXEL White = {0xFF, 0xFF, 0xFF, 0};
