@@ -1,0 +1,27 @@
+[Defines]
+  INF_VERSION                    = 1.25
+  BASE_NAME                      = Pong
+  FILE_GUID                      = 82d8802a-1a10-4651-8279-b7e82d1e8126
+  MODULE_TYPE                    = UEFI_APPLICATION
+  VERSION_STRING                 = 1.0
+  ENTRY_POINT                    = UefiMain
+
+[Sources]
+  Pong.c
+
+[Packages]
+  MdePkg/MdePkg.dec
+  
+[LibraryClasses]
+  UefiApplicationEntryPoint
+  UefiLib
+  
+[Guids]
+
+[Ppis]
+
+[Protocols]
+
+[FeaturePcd]
+
+[Pcd]
